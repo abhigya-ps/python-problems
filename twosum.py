@@ -6,7 +6,6 @@ def twoSum(nums, target):
     pairs = {}
     for i in range(len(nums)):
         if nums[i] in pairs:
-            # do something
             return [pairs[nums[i]], i]
         else:
             pairs[target - nums[i]] = i
